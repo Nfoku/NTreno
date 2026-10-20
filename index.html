@@ -324,9 +324,114 @@ const PLAN={
    blocks:[{t:"Caminata o trote ligero",d:"2–4 km",x:"Ritmo en el que puedas platicar."},
            {t:"Down Dog · Movilidad",d:"15 min",x:"Cadera, espalda y hombros. Prepara la semana."}]}
  },
- ella:null
+ ella:{
+  lun:{name:"Inferior A",focus:"Glúteo · Cuádriceps",time:"Horario por definir",dur:65,
+   tip:"Tu músculo ya está ahí; ahora lo vamos a <b>mostrar</b>. Fuerza pesada con pausas para conservarlo mientras baja la grasa.",
+   warm:"Caminadora inclinada 5 min · Puente de glúteo 2×15 · Caminata lateral con banda 2×10 por lado",
+   pm:{t:"Estiramiento + respiración",d:"10–15 min",x:"Cadera y glúteo. Cierra con 4 rondas de respiración de caja."},
+   items:[
+    {id:"hipthrust",name:"Hip thrust con mancuerna",sets:4,reps:"10–12",tempo:"2 s pausa arriba",weight:"Calibrar (RIR 2)",rest:90,pose:"hipthrust",
+     tech:"Espalda alta en el banco, barbilla al pecho. Arriba el cuerpo forma una mesa.",
+     cues:["Cadera abajo, mancuerna en la cadera","Empuja con los talones","Cadera alta, aprieta 2 s"]},
+    {id:"prensa",name:"Prensa",sets:3,reps:"10–12",tempo:"3 s bajada",weight:"Calibrar",rest:90,pose:"prensa",
+     tech:"Espalda baja pegada al respaldo. No bloquees rodillas arriba.",
+     cues:["Piernas casi extendidas","Baja en 3 s","Abajo sin despegar la cadera"]},
+    {id:"desplante",name:"Desplante reverso con mancuernas",sets:3,reps:"10 por pierna",tempo:"Rodilla trasera casi al piso",weight:"Calibrar",rest:75,pose:"lunge",
+     tech:"Da el paso hacia atrás, no al frente: cuida la rodilla y activa más el glúteo.",
+     cues:["De pie, mancuernas a los lados","Paso atrás y baja","Fondo, sube con el talón de adelante"]},
+    {id:"extension",name:"Extensión de cuádriceps",ss:"A",sets:3,reps:"12–15",tempo:"2 s pausa arriba",weight:"Calibrar",rest:0,pose:"extension",
+     tech:"Agárrate de las manijas y aprieta arriba.",
+     cues:["Rodilla a 90°","Sube controlado","Pierna extendida, aprieta 2 s"]},
+    {id:"patada",name:"Patada de glúteo en polea",ss:"A",sets:3,reps:"12 por pierna",tempo:"1 s apretando atrás",weight:"Calibrar",rest:60,pose:"kickback",
+     tech:"Tobillera en la polea baja. Torso inclinado y abdomen firme; la espalda baja no se arquea.",
+     cues:["Rodilla bajo la cadera","Patea atrás y arriba","Aprieta el glúteo 1 s"]},
+    {id:"abduccion",name:"Abducción con banda de pie",sets:3,reps:"20",tempo:"Últimas 5 reps en pulsos",weight:"Banda media",rest:45,pose:"bandwalk",
+     tech:"Banda arriba de las rodillas. Abre la pierna sin inclinar el torso.",
+     cues:["Pies juntos, banda tensa","Abre la pierna","Aguanta y regresa lento"]},
+    {id:"fin-goblet",name:"Sentadilla goblet",ss:"Finisher",sets:3,reps:"12",tempo:"Sin descanso al siguiente",weight:"Ligero",rest:0,pose:"goblet",
+     tech:"Ritmo constante y profundo.",cues:["De pie, mancuerna al pecho","Baja","Fondo y sube"]},
+    {id:"fin-cuerda",name:"Cuerda",ss:"Finisher",sets:3,reps:"40 s",tempo:"Saltos cortos",weight:"—",rest:60,pose:"rope",
+     tech:"Saltos bajos sobre la punta del pie. Si el impacto molesta, cambia por marcha rápida.",cues:["Cuerda arriba","Pasa la cuerda","Salta corto"]}
+   ]},
+  mar:{name:"Superior A",focus:"Espalda · Hombro",time:"Horario por definir",dur:60,
+   tip:"Espalda y hombros marcados hacen ver la cintura más chica. En el remo <b>empieza por el brazo izquierdo</b>.",
+   warm:"Rotaciones de hombro con banda 2×15 · Jalón ligero 1×15 · Face pull ligero 1×15",
+   pm:{t:"Estiramiento de espalda",d:"10 min",x:"Torsiones suaves y gato-vaca."},
+   items:[
+    {id:"jalon",name:"Jalón dorsal en polea",sets:4,reps:"10–12",tempo:"3 s de subida",weight:"Calibrar",rest:90,pose:"pulldown",
+     tech:"Pecho hacia la barra, ligera inclinación atrás.",cues:["Brazos arriba","Jala con los codos","Barra al pecho alto"]},
+    {id:"remo1",name:"Remo con mancuerna a 1 mano",sets:3,reps:"10 por lado",tempo:"Empieza por el brazo izquierdo",weight:"Calibrar",rest:75,pose:"dbrow",
+     tech:"Rodilla y mano en el banco, espalda plana. El trabajo unilateral empareja la ligera diferencia entre brazos.",
+     cues:["Brazo colgando","Codo hacia la cadera","Aprieta 2 s arriba"]},
+    {id:"hombro",name:"Press de hombro sentada",sets:3,reps:"10",tempo:"Rest-pause en la última",weight:"Calibrar",rest:90,pose:"ohpSeat",
+     tech:"Respaldo vertical y espalda pegada. Abdomen firme.",cues:["Mancuernas a la altura del hombro","Empuja arriba","Brazos extendidos"]},
+    {id:"laterales",name:"Elevaciones laterales",ss:"A",sets:3,reps:"15",tempo:"3 s bajada",weight:"Calibrar",rest:0,pose:"lateral",
+     tech:"Sube hasta la altura del hombro, nunca más arriba.",cues:["Brazos a los lados","Sube abriendo","Altura de hombro"]},
+    {id:"facepull",name:"Face pulls",ss:"A",sets:3,reps:"15",tempo:"2 s de isometría",weight:"Calibrar",rest:60,pose:"facepull",
+     tech:"Puños junto a las orejas al final.",cues:["Brazos al frente","Jala a la cara","Codos altos, aguanta"]},
+    {id:"lagartija",name:"Lagartijas inclinadas en banco",sets:3,reps:"Máximo",tempo:"3 s bajada",weight:"Peso corporal",rest:75,pose:"pushupInc",
+     tech:"Cuerpo en línea recta de cabeza a talones. Codos a 45°.",cues:["Brazos extendidos, cuerpo recto","Baja en 3 s","Pecho al banco y empuja"]},
+    {id:"plancha",name:"Plancha",sets:3,reps:"30–40 s",tempo:"Aprieta glúteo y abdomen",weight:"—",rest:45,pose:"plank",
+     tech:"Codos bajo los hombros. Si la cadera se cae, apoya rodillas y sigue.",cues:["Rodillas y antebrazos","Sube la cadera","Línea recta, aguanta"]}
+   ]},
+  mie:{rest:true,name:"Cardio Z2",focus:"Caminadora inclinada",
+   tip:"La grasa del tronco responde muy bien a la <b>caminata inclinada</b>: quema sin robarle energía a las piernas.",
+   blocks:[{t:"Caminadora inclinada",d:"30 min",x:"Zona 2: un ritmo en el que puedes hablar con frases cortas. Inclinación 8–12%, velocidad 4.5–5.5 km/h."},
+           {t:"Pasos del día",d:"8,000–10,000",x:"Suma caminatas cortas después de comer."}]},
+  jue:{name:"Inferior B",focus:"Glúteo · Femoral",time:"Horario por definir",dur:65,
+   tip:"En la búlgara <b>inclina el torso</b> al frente: así el trabajo se va al glúteo.",
+   warm:"Bici o caminadora 5 min · Puente de glúteo 2×15 · Bisagra con palo 2×10",
+   pm:{t:"Estiramiento de femoral y cadera",d:"10–15 min",x:"Respiración de caja al final."},
+   items:[
+    {id:"rdl",name:"Peso muerto rumano",sets:4,reps:"10",tempo:"3 s bajada · pausa abajo",weight:"Calibrar",rest:90,pose:"rdl",
+     tech:"Cadera hacia atrás, espalda neutra y mancuernas pegadas a las piernas.",cues:["De pie, rodillas suaves","Cadera atrás en 3 s","Estiramiento femoral"]},
+    {id:"bulgara",name:"Sentadilla búlgara",sets:3,reps:"10 por pierna",tempo:"Torso inclinado · 2 s pausa abajo",weight:"Calibrar",rest:90,pose:"bulgara",
+     tech:"Pie de atrás en el banco. Torso un poco inclinado al frente para cargar el glúteo.",cues:["Torso firme","Baja en control","Pausa 2 s y sube"]},
+    {id:"femoral",name:"Curl femoral",sets:3,reps:"12",tempo:"Drop set en la última",weight:"Calibrar",rest:75,pose:"legcurl",
+     tech:"Cadera pegada al banco.",cues:["Piernas extendidas","Talón al glúteo","Baja en 3 s"]},
+    {id:"puente1",name:"Puente de glúteo a 1 pierna",ss:"A",sets:3,reps:"12 por pierna",tempo:"2 s pausa arriba",weight:"Peso corporal",rest:0,pose:"bridge1",
+     tech:"Empuja con el talón del pie apoyado. La pierna libre sigue la línea del cuerpo.",cues:["Espalda en el piso","Sube la cadera","Aprieta 2 s"]},
+    {id:"lateralbanda",name:"Caminata lateral con banda",ss:"A",sets:3,reps:"15 pasos por lado",tempo:"Tensión constante",weight:"Banda media",rest:60,pose:"bandwalk",
+     tech:"Media sentadilla y pasos cortos. La banda nunca se afloja.",cues:["Pies separados","Paso al lado","Junta sin aflojar"]},
+    {id:"pantorrilla",name:"Pantorrilla de pie",sets:3,reps:"15",tempo:"3 s bajada",weight:"Calibrar",rest:60,pose:"calf",
+     tech:"Sobre un escalón para ganar rango.",cues:["Talón abajo","Sube","Punta máxima"]},
+    {id:"farmer",name:"Farmer's walk (finisher)",sets:4,reps:"1 trayecto",tempo:"Postura alta, pasos cortos",weight:"Pesado",rest:60,pose:"farmer",
+     tech:"Hombros abajo y atrás, abdomen firme.",cues:["Paso con la derecha","Postura alta","Paso con la izquierda"]}
+   ]},
+  vie:{name:"Superior B",focus:"Fuerza + Circuito Marvel",time:"Horario por definir",dur:60,
+   tip:"Hoy cierra con el <b>Circuito Marvel</b>: 40 s de trabajo, 20 s de transición y 1 min entre rondas.",
+   warm:"Cuerda 2 min · Rotaciones de hombro 1×15 · Sentadilla goblet ligera 1×10",
+   pm:{t:"Estiramiento completo",d:"15 min",x:"Cuerpo completo y respiración de caja."},
+   items:[
+    {id:"inclinado",name:"Press inclinado con mancuernas",sets:3,reps:"10",tempo:"3-1-1",weight:"Calibrar",rest:90,pose:"incline",
+     tech:"Banco a 30–45°. Escápulas juntas.",cues:["Brazos arriba","Baja en 3 s","Pausa abajo"]},
+    {id:"remopolea",name:"Remo en polea al centro",sets:3,reps:"12",tempo:"2 s apretando atrás",weight:"Calibrar",rest:75,pose:"cablerow",
+     tech:"Pecho alto y torso estable.",cues:["Brazos al frente","Jala al ombligo","Codos atrás"]},
+    {id:"curl",name:"Curl de bíceps",ss:"A",sets:2,reps:"12",tempo:"Codos quietos",weight:"Calibrar",rest:0,pose:"curl",
+     tech:"Sin balanceo.",cues:["Brazos extendidos","Sube","Aprieta y baja lento"]},
+    {id:"triceps",name:"Extensión de tríceps en polea",ss:"A",sets:2,reps:"12",tempo:"3 s de subida",weight:"Calibrar",rest:60,pose:"pushdown",
+     tech:"Codos pegados a las costillas.",cues:["Manos al pecho","Empuja abajo","Brazo extendido"]},
+    {id:"c-thruster",name:"Thruster con mancuernas",ss:"Circuito Marvel",sets:3,reps:"40 s",tempo:"Sentadilla + press en un movimiento",weight:"Ligero / medio",rest:0,pose:"thruster",
+     tech:"Usa el impulso de la sentadilla para subir las mancuernas.",cues:["Sentadilla, mancuernas al hombro","Sube empujando","Brazos arriba"]},
+    {id:"c-renegado",name:"Remo renegado",ss:"Circuito Marvel",sets:3,reps:"40 s",tempo:"Alterna brazos",weight:"Ligero",rest:0,pose:"renegade",
+     tech:"Pies separados para estabilidad. La cadera no gira.",cues:["Plancha sobre mancuernas","Rema un brazo","Regresa y alterna"]},
+    {id:"c-escaladores",name:"Escaladores",ss:"Circuito Marvel",sets:3,reps:"40 s",tempo:"Ritmo constante",weight:"—",rest:0,pose:"climber",
+     tech:"Manos bajo los hombros. Lleva la rodilla al pecho sin levantar la cadera.",cues:["Rodilla derecha al pecho","Cambia","Rodilla izquierda al pecho"]},
+    {id:"c-goblet",name:"Sentadilla goblet con pausa",ss:"Circuito Marvel",sets:3,reps:"40 s",tempo:"1 s abajo",weight:"Medio",rest:0,pose:"goblet",
+     tech:"Torso erguido, rodillas al frente.",cues:["De pie","Baja","Pausa y sube"]},
+    {id:"c-cuerda",name:"Cuerda",ss:"Circuito Marvel",sets:3,reps:"40 s",tempo:"1 min de descanso al terminar la ronda",weight:"—",rest:60,pose:"rope",
+     tech:"O marcha rápida si el impacto molesta.",cues:["Cuerda arriba","Pasa la cuerda","Salta corto"]}
+   ]},
+  sab:{rest:true,name:"Cardio Z2",focus:"Actividad libre",
+   tip:"Muévete en algo que disfrutes: caminata, bici o clase. La constancia gana.",
+   blocks:[{t:"Cardio zona 2",d:"30–45 min",x:"Caminadora inclinada, bici o caminata al aire libre."},
+           {t:"Movilidad",d:"10 min",x:"Cadera y espalda."}]},
+  dom:{rest:true,name:"Descanso",focus:"Recuperación",
+   tip:"Descanso total. Dormir bien también <b>quema grasa</b>.",
+   blocks:[{t:"Pasos",d:"Libre",x:"Una caminata ligera si te apetece."},{t:"Prepara la semana",d:"20 min",x:"Deja lista la proteína y las comidas de los primeros días."}]}
+ }
 };
-const NUTRI=[["2,450","kcal / día"],["150 g","proteína"],["5 g","creatina"]];
+const NUTRI={el:[["2,450","kcal / día"],["150 g","proteína"],["5 g","creatina"]],ella:[["1,900","kcal / día"],["130 g","proteína"],["3–5 g","creatina"]]};
 const DAYS=[["lun","Lun"],["mar","Mar"],["mie","Mié"],["jue","Jue"],["vie","Vie"],["sab","Sáb"],["dom","Dom"]];
 
 /* ---------- Kuro en movimiento: poses por articulaciones ---------- */
@@ -394,7 +499,33 @@ const POSES={
  overhead:{base:{t:28,ln:[18,-8],lf:[-12,-6]},scene:[{t:"rect",x:12,y:20,w:12,h:168,c:"slate"},GROUND],props:[{t:"cable",x:24,y:150}],
   f:[{an:[150,-30],af:[146,-30]},null,{an:[150,150],af:[146,150]}],tm:[1,1,2.5,.6],ph:["Extiende","Aprieta","Regresa","Estira"]},
  farmer:{base:{an:[2,0],af:[0,0]},scene:[GROUND],props:[{t:"db"}],
-  f:[{ln:[22,-4],lf:[-16,-14],fn:100,ff:60},{ln:[2,-2],lf:[0,-6]},{ln:[-16,-14],lf:[22,-4],fn:60,ff:100}],tm:[.7,0,.7,0],ph:["Paso","Paso","Paso","Paso"]}
+  f:[{ln:[22,-4],lf:[-16,-14],fn:100,ff:60},{ln:[2,-2],lf:[0,-6]},{ln:[-16,-14],lf:[22,-4],fn:60,ff:100}],tm:[.7,0,.7,0],ph:["Paso","Paso","Paso","Paso"]},
+ /* --- Poses nuevas para la rutina de Ella --- */
+ lunge:{base:{t:6},scene:[GROUND],props:[{t:"db"}],
+  f:[{hx:132,hy:118,ln:[2,0],lf:[0,0]},null,{hx:112,hy:146,ln:[80,-20],lf:[-25,-80],ff:-40}],tm:[2,.5,1.2,.5],ph:["Paso atrás y baja","Fondo","Sube","Arriba"]},
+ kickback:{base:{hx:110,hy:118,t:28,an:[70,60],af:[66,60],lf:[4,-2]},scene:[{t:"rect",x:168,y:20,w:12,h:168,c:"slate"},GROUND],
+  props:[{t:"cable",x:168,y:180,j:"ankleN"}],f:[{ln:[8,-4]},null,{ln:[-48,-58]}],tm:[1,1,2,.4],ph:["Patea atrás","Aprieta","Regresa","Inicio"]},
+ bandwalk:{base:{view:"front",hy:121,an:[12,40],af:[12,40]},scene:[GROUND],props:[{t:"band"}],
+  f:[{ln:[2,0],lf:[2,0]},null,{ln:[20,0],lf:[2,0]}],tm:[1,1,1,.3],ph:["Abre","Aguanta","Cierra","Tensión"]},
+ bridge1:{base:{an:[88,90],af:[86,90]},scene:[GROUND],props:[],
+  f:[{hx:100,hy:178,t:-90,ln:[128,128],lf:[150,10]},null,{hx:100,hy:160,t:-112,ln:[112,112],lf:[110,-10]}],tm:[1,2,1.5,.5],ph:["Sube la cadera","Aprieta 2 s","Baja","Abajo"]},
+ pushupInc:{base:{pin:{j:"handN",x:156,y:144}},scene:[{t:"rect",x:142,y:146,w:52,h:42,c:"slate"},GROUND],props:[],
+  f:[{t:45,an:[40,40],af:[38,38],ln:[-45,-45],lf:[-46,-46]},null,{t:58,an:[-66,67],af:[-68,65],ln:[-58,-58],lf:[-59,-59]}],tm:[3,.5,1,.5],ph:["Baja 3 s","Pecho al banco","Empuja","Arriba"]},
+ plank:{base:{pin:{j:"elbowN",x:150,y:180},t:76,an:[0,90],af:[0,90]},scene:[GROUND],props:[],
+  f:[{ln:[-60,-120],lf:[-62,-120]},null,{ln:[-76,-76],lf:[-77,-77]}],tm:[1.5,4,1.5,1],ph:["Sube","Aguanta","Baja","Rodillas"]},
+ ohpSeat:{base:{hx:90,hy:146,t:-4,ln:[84,0],lf:[80,-4]},
+  scene:[{t:"line",x1:80,y1:150,x2:76,y2:84,w:12,c:"slate"},{t:"rect",x:66,y:148,w:44,h:10,c:"slate"},{t:"line",x1:84,y1:158,x2:84,y2:188,w:5,c:"line"},GROUND],
+  props:[{t:"db"}],f:[{an:[30,170],af:[26,170]},null,{an:[174,176],af:[170,176]}],tm:[1,.3,2,.6],ph:["Empuja","Arriba","Baja 2 s","Abajo"]},
+ thruster:{base:{},scene:[GROUND],props:[{t:"db"}],
+  f:[{hx:100,hy:146,t:22,ln:[78,-30],lf:[72,-30],fn:70,ff:70,an:[22,165],af:[18,165]},
+     {hx:112,hy:122,t:6,ln:[20,-10],lf:[16,-10],an:[20,168],af:[16,168]},
+     {hx:114,hy:116,t:0,ln:[2,0],lf:[-2,0],fn:84,ff:84,an:[174,178],af:[170,178]}],tm:[1,.4,1.6,.4],ph:["Sube y empuja","Arriba","Baja a sentadilla","Fondo"]},
+ renegade:{base:{pin:{j:"handF",x:152,y:178},t:62,ln:[-60,-60],lf:[-62,-62],af:[0,0]},scene:[GROUND],props:[{t:"db"}],
+  f:[{an:[0,0]},null,{an:[-100,0]}],tm:[1,1,1.5,.6],ph:["Rema","Aprieta","Baja","Plancha"]},
+ climber:{base:{pin:{j:"handF",x:152,y:184},t:62,an:[0,0],af:[0,0]},scene:[GROUND],props:[],
+  f:[{ln:[70,-60],lf:[-62,-62]},{ln:[-62,-62],lf:[-62,-62]},{ln:[-62,-62],lf:[70,-60]}],tm:[.35,0,.35,0],ph:["Rodilla al pecho","Cambia","Rodilla al pecho","Cambia"]},
+ rope:{base:{view:"front",an:[30,50],af:[30,50]},scene:[GROUND],props:[{t:"rope"}],
+  f:[{hy:118,rope:-170},null,{hy:110,rope:166}],tm:[.3,0,.3,0],ph:["Salta","Salta","Salta","Salta"]}
 };
 function full(ex,fi){
  const p=POSES[ex], f=p.f[fi]||lerpP(full(ex,0),full(ex,2),.5);
@@ -418,8 +549,8 @@ function joints(p){
   const m=a=>-a;
   J.elbowN=add(J.SN,p.an[0],L.ua);J.handN=add(J.elbowN,p.an[1],L.fa);
   J.elbowF=add(J.SF,m(p.af[0]),L.ua);J.handF=add(J.elbowF,m(p.af[1]),L.fa);
-  J.kneeN=add(J.HN,4,L.th);J.ankleN=add(J.kneeN,2,L.sh);J.toeN=add(J.ankleN,90,L.ft*.7);
-  J.kneeF=add(J.HF,-4,L.th);J.ankleF=add(J.kneeF,-2,L.sh);J.toeF=add(J.ankleF,-90,L.ft*.7);
+  J.kneeN=add(J.HN,4+p.ln[0],L.th);J.ankleN=add(J.kneeN,2+p.ln[0],L.sh);J.toeN=add(J.ankleN,90,L.ft*.7);
+  J.kneeF=add(J.HF,-4-p.lf[0],L.th);J.ankleF=add(J.kneeF,-2-p.lf[0],L.sh);J.toeF=add(J.ankleF,-90,L.ft*.7);
  }else{
   J.SN=S;J.SF=[S[0]-3,S[1]-1];J.HN=H;J.HF=[H[0]-3,H[1]-1];
   J.elbowN=add(J.SN,p.an[0],L.ua);J.handN=add(J.elbowN,p.an[1],L.fa);
@@ -462,7 +593,7 @@ function draw(ex,p){
   if(o.t==="circle")s+=`<circle cx="${o.x}" cy="${o.y}" r="${o.r}" fill="${c}"/>`;}
  const cables=def.props.filter(q=>q.t.startsWith("cable"));
  for(const q of cables){
-  if(q.t==="cable"){s+=`<line x1="${q.x}" y1="${q.y}" x2="${J.handN[0]}" y2="${J.handN[1]}" stroke="var(--fig-cable)" stroke-width="2"/><circle cx="${q.x}" cy="${q.y}" r="4.5" fill="var(--fig-ink)"/>`}
+  if(q.t==="cable"){const E=J[q.j||"handN"];s+=`<line x1="${q.x}" y1="${q.y}" x2="${E[0]}" y2="${E[1]}" stroke="var(--fig-cable)" stroke-width="2"/><circle cx="${q.x}" cy="${q.y}" r="4.5" fill="var(--fig-ink)"/>`}
   if(q.t==="cableF"){s+=`<line x1="${q.x1}" y1="${q.y1}" x2="${J.handF[0]}" y2="${J.handF[1]}" stroke="var(--fig-cable)" stroke-width="2"/><line x1="${q.x2}" y1="${q.y2}" x2="${J.handN[0]}" y2="${J.handN[1]}" stroke="var(--fig-cable)" stroke-width="2"/><circle cx="${q.x1}" cy="${q.y1}" r="4.5" fill="var(--fig-ink)"/><circle cx="${q.x2}" cy="${q.y2}" r="4.5" fill="var(--fig-ink)"/>`}
  }
  const farSkin=p.view==="front"?COL.skin:COL.skinF;
@@ -485,6 +616,8 @@ function draw(ex,p){
   if(q.t==="dbN")s+=db(J.handN);
   if(q.t==="dbHip")s+=db([J.H[0]-2,J.H[1]-8],1.1);
   if(q.t==="grip"){s+=`<rect x="${J.handN[0]-6}" y="${J.handN[1]-3}" width="12" height="6" rx="3" fill="${COL.dark}"/>`}
+  if(q.t==="band"){s+=`<line x1="${J.kneeF[0]}" y1="${J.kneeF[1]+6}" x2="${J.kneeN[0]}" y2="${J.kneeN[1]+6}" stroke="#F25F5C" stroke-width="4" stroke-linecap="round"/>`}
+  if(q.t==="rope"){const a=J.handF,b=J.handN;s+=`<path d="M${a[0]} ${a[1]} Q${(a[0]+b[0])/2} ${(a[1]+b[1])/2+(p.rope||0)} ${b[0]} ${b[1]}" fill="none" stroke="var(--fig-ink)" stroke-width="2.5"/>`}
   if(q.t==="pad"){const P=J[q.j];s+=`<circle cx="${P[0]}" cy="${P[1]}" r="6.5" fill="var(--fig-slate)" stroke="${COL.ol}" stroke-width="2"/>`}
   if(q.t==="sled"){const P=J[q.j],a=R(q.dir+90),dx=Math.sin(a)*q.len,dy=-Math.cos(a)*q.len;
    const v=[Math.cos(R(q.dir)),-Math.sin(R(q.dir))];
@@ -522,6 +655,7 @@ function render(){
  const d=plan[state.day],label=DAYS.find(x=>x[0]===state.day)[1];
  if(d.rest){m.innerHTML=heroHTML(d,label)+restHTML(d)+nutriHTML();return}
  m.innerHTML=heroHTML(d,label)+
+  (state.who==="ella"?`<div class="strip"><span class="tag">Plan provisional</span><p>Basado en su InBody del 01/09/2026. Se ajusta cuando tengamos sus días, horario, experiencia y lesiones.</p></div>`:"")+
   `<div class="strip"><span class="tag">Calentamiento</span><p>${esc(d.warm)}</p></div>`+
   `<section class="stage" id="stage" aria-label="Ejercicio actual"></section>`+
   `<div class="cols"><section class="list" id="list" aria-label="Rutina del día"></section><aside class="side">${pmHTML(d)}${nutriHTML()}</aside></div>`;
@@ -538,7 +672,7 @@ function heroHTML(d,label){
  </div></section>`;
 }
 function pmHTML(d){return `<div class="card"><div class="eyebrow">Bloque PM · en casa</div><h3>${esc(d.pm.t)}</h3><p class="mono">${esc(d.pm.d)}</p><p>${esc(d.pm.x)}</p></div>`}
-function nutriHTML(){return `<div class="card"><div class="eyebrow">Anclaje del día</div><div class="anchors">${NUTRI.map(([a,b])=>`<div><b>${a}</b><span>${b}</span></div>`).join("")}</div><p>Shake + creatina en el vestidor, justo después de bañarte.</p></div>`}
+function nutriHTML(){return `<div class="card"><div class="eyebrow">Anclaje del día</div><div class="anchors">${NUTRI[state.who].map(([a,b])=>`<div><b>${a}</b><span>${b}</span></div>`).join("")}</div><p>Shake + creatina en el vestidor, justo después de bañarte.</p></div>`}
 function restHTML(d){return `<div class="restday">${d.blocks.map(b=>`<div class="card"><div class="eyebrow">${esc(b.d)}</div><h3>${esc(b.t)}</h3><p>${esc(b.x)}</p></div>`).join("")}</div>`}
 function ellaView(){return `<section class="empty"><img src="${KURO}" alt="Kuro">
  <div style="display:flex;flex-direction:column;gap:12px;min-width:0"><div class="eyebrow">Rutina de Ella</div>
@@ -551,7 +685,7 @@ function exGroups(items){const g=[];items.forEach((it,i)=>{const last=g[g.length
  if(it.ss&&last&&last.ss===it.ss)last.items.push([it,i]);else g.push({ss:it.ss||null,items:[[it,i]]})});return g}
 function renderList(){
  const d=PLAN[state.who][state.day];
- $("#list").innerHTML=`<h3>Rutina del día</h3>`+exGroups(d.items).map(g=>`<div class="grp ${g.ss&&g.items.length>1?"ss":""}" data-label="Superserie ${g.ss||""}">`+
+ $("#list").innerHTML=`<h3>Rutina del día</h3>`+exGroups(d.items).map(g=>`<div class="grp ${g.ss&&g.items.length>1?"ss":""}" data-label="${g.ss&&g.ss.length>1?g.ss:"Superserie "+(g.ss||"")}">`+
   g.items.map(([it,i])=>{const done=store.get(kSets(it.id),[]).filter(Boolean).length>=it.sets;
    return `<button class="row ${i===state.ex?"on":""} ${done?"done":""}" data-ex="${i}"><span class="num">${i+1}</span><span class="nm">${esc(it.name)}<small>${esc(it.weight)}</small></span><span class="rx">${it.sets} × ${esc(it.reps)}</span></button>`}).join("")+`</div>`).join("");
 }
@@ -559,7 +693,7 @@ function renderStage(){
  const d=PLAN[state.who][state.day],it=d.items[state.ex],P=POSES[it.pose];
  const marks=store.get(kSets(it.id),[]);
  const ssMates=it.ss?d.items.filter(x=>x.ss===it.ss).length:0;
- $("#stage").innerHTML=`<div class="screen">${ssMates>1?`<span class="ss-badge">Superserie ${it.ss}</span>`:""}<span class="counter">${state.ex+1} / ${d.items.length}</span>
+ $("#stage").innerHTML=`<div class="screen">${ssMates>1?`<span class="ss-badge">${it.ss.length>1?it.ss:"Superserie "+it.ss}</span>`:""}<span class="counter">${state.ex+1} / ${d.items.length}</span>
   ${svgWrap(draw(it.pose,full(it.pose,0)))}
   <div class="phase"><span class="lbl" id="plbl">${esc(P.ph[0])}</span><button id="play" aria-pressed="${state.playing}">${state.playing?"Pausa":"Animar"}</button></div></div>
  <div class="info"><div><div class="eyebrow">Ejercicio ${state.ex+1}</div><h2>${esc(it.name)}</h2></div>
